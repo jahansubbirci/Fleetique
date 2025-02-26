@@ -41,8 +41,14 @@ namespace WpfBoilerPlate {
 
         protected override void OnStartup(object sender, System.Windows.StartupEventArgs e) {
             base.OnStartup(sender, e);
-            DisplayRootViewFor<HomeViewModel>();
-
+            try
+            {
+                DisplayRootViewFor<HomeViewModel>();
+            }
+            catch (Exception ex) 
+            {
+            
+            }
         }
     }
 }

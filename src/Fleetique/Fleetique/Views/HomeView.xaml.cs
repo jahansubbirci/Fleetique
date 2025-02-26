@@ -22,6 +22,35 @@ namespace WpfBoilerPlate.Views
         public HomeView()
         {
             InitializeComponent();
+          //  IconPlayer.LoadedBehavior = MediaState.Play;
+           // this.Loaded+=Window_Loaded;
+
         }
+
+        private void IconPlayer_GiveFeedback(object sender, GiveFeedbackEventArgs e)
+        {
+
+        }
+
+        private void IconPlayer_MediaFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+            var ex=e.ErrorException.ToString();
+
+        }
+
+        private void IconPlayer_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            IconPlayer.Position = new TimeSpan(0,0,1);
+            IconPlayer.Play();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            IconPlayer_MediaEnded(sender,e);
+        }
+
+       
+
+       
     }
 }

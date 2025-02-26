@@ -6,11 +6,12 @@
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:WpfBoilerPlate.Views"
         mc:Ignorable="d"
-        Title="Home" Height="450" Width="800">
+        Title="Home" Height="450" Width="800"
+        Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="10"></RowDefinition>
-            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="10"></RowDefinition>
         </Grid.RowDefinitions>
@@ -22,22 +23,68 @@
 
         <Grid Grid.Column="1" Grid.Row="1">
             <md:Card Margin="10"
-                     Background="AliceBlue"
-                     
+                     Background="White"
+                     Height="35"
                      >
-                <TextBlock 
-                    Text="Change Your Component Below"
+                <Grid HorizontalAlignment="Stretch">
+
+                    <Grid >
+                        <MediaElement Panel.ZIndex="100"
+        HorizontalAlignment="Center"
+        VerticalAlignment="Center"
+        Width="40"
+        Height="40"
+        Margin="-200,0,0,0"
+        Name="IconPlayer" 
+        LoadedBehavior="Play" 
+        UnloadedBehavior="Manual"
+        
+        Stretch="Fill"
+      
+        
+                    >
+                            <MediaElement.Triggers>
+                                <EventTrigger RoutedEvent="MediaElement.Loaded">
+                                    <EventTrigger.Actions>
+                                        <BeginStoryboard>
+                                            <Storyboard RepeatBehavior="Forever" Duration="0:0:3">
+
+                                                <!-- The MediaTimeline has a RepeatBehavior="Forever" which makes the media play
+       over and over indefinitely.-->
+                                                <MediaTimeline Source="Resources\search.gif" Storyboard.TargetName="IconPlayer"  
+   RepeatBehavior="Forever" />
+
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger.Actions>
+                                </EventTrigger>
+                            </MediaElement.Triggers>
+
+
+                        </MediaElement>
+                    </Grid>
+
+
+                    <TextBlock 
+                    Text="Fleetique"
                     Foreground="SteelBlue"
                     Style="{DynamicResource MaterialDesignHeadline6TextBlock}"
                     FontFamily="{DynamicResource MaterialDesignFont}"
                     TextAlignment="Center"
-                    VerticalAlignment="Center"></TextBlock>
+                            
+                    VerticalAlignment="Center"
+                            Margin="20,0,0,0"></TextBlock>
+                    
+                </Grid>
             </md:Card>
         </Grid>
-        <Grid Grid.Column="1" Grid.Row="2">
+        <Grid Grid.Column="1" Grid.Row="2" Background="SteelBlue">
+           
             <md:Card 
                 Margin="10"
-                Background="AliceBlue"></md:Card>
+                Background="AliceBlue">
+               
+            </md:Card>
         </Grid>
     </Grid>
 </Window>

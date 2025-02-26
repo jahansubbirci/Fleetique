@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfBoilerPlate", "Fleetique\Fleetique.csproj", "{D5DE782F-271C-49A7-9255-E63B5CF95201}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleetique", "Fleetique\Fleetique.csproj", "{D5DE782F-271C-49A7-9255-E63B5CF95201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "..\..\..\..\..\OneDrive - Maersk Group\Projects\LoggerService\LoggerService.csproj", "{5EBAF20D-DB5A-4CD2-B75B-0EF31EF526F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumBoilerPlate", "..\..\..\..\..\OneDrive - Maersk Group\Projects\SeleniumBoilerPlate\SeleniumBoilerPlate\SeleniumBoilerPlate.csproj", "{35FE2293-397A-4494-9348-8A25934F63D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{D5DE782F-271C-49A7-9255-E63B5CF95201}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5DE782F-271C-49A7-9255-E63B5CF95201}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5DE782F-271C-49A7-9255-E63B5CF95201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EBAF20D-DB5A-4CD2-B75B-0EF31EF526F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EBAF20D-DB5A-4CD2-B75B-0EF31EF526F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EBAF20D-DB5A-4CD2-B75B-0EF31EF526F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EBAF20D-DB5A-4CD2-B75B-0EF31EF526F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35FE2293-397A-4494-9348-8A25934F63D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35FE2293-397A-4494-9348-8A25934F63D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35FE2293-397A-4494-9348-8A25934F63D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35FE2293-397A-4494-9348-8A25934F63D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

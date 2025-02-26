@@ -7,7 +7,7 @@
     <ProjectGuid>{D5DE782F-271C-49A7-9255-E63B5CF95201}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WpfBoilerPlate</RootNamespace>
-    <AssemblyName>WpfBoilerPlate</AssemblyName>
+    <AssemblyName>Fleetique</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -57,6 +57,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Caliburn.Micro.3.2.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
     </Reference>
@@ -135,6 +136,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\search.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\search.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\OneDrive - Maersk Group\Projects\LoggerService\LoggerService.csproj">
+      <Project>{5ebaf20d-db5a-4cd2-b75b-0ef31ef526f0}</Project>
+      <Name>LoggerService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\OneDrive - Maersk Group\Projects\SeleniumBoilerPlate\SeleniumBoilerPlate\SeleniumBoilerPlate.csproj">
+      <Project>{35fe2293-397a-4494-9348-8a25934f63d6}</Project>
+      <Name>SeleniumBoilerPlate</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.5.1.0\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.5.1.0\build\MaterialDesignThemes.targets')" />
