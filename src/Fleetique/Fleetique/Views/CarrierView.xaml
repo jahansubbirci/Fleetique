@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="Fleetique.Views.CarrierView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:cal="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro.Platform.Core"
+           
+             xmlns:local="clr-namespace:Fleetique.Views" xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <sys:Double x:Key="ControlWidth">300</sys:Double>
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel>
+                
+                <ComboBox x:Name="CarrierCombo" Margin="10"  HorizontalAlignment="Center" 
+                          ItemsSource="{Binding Carriers}" SelectedItem="{Binding SelectedCarrier,Mode=TwoWay}"
+                          Style="{DynamicResource MaterialDesignOutlinedComboBox}"
+                          md:HintAssist.Hint="Carrier"
+                          md:HintAssist.IsFloating="True" md:HintAssist.FloatingScale="1.4"
+                          Width="{DynamicResource ControlWidth}"
+                          />
+                <Button Background="Transparent" Foreground="SteelBlue" BorderBrush="SteelBlue"
+                        Content="Open Browser"
+                        HorizontalAlignment="Center"
+                        Width="{DynamicResource ControlWidth}"
+                        ></Button>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</UserControl>

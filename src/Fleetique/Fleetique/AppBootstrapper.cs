@@ -1,23 +1,28 @@
-namespace WpfBoilerPlate {
+namespace Fleetique
+{
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using Caliburn.Micro;
-    using WpfBoilerPlate.ViewModels;
+    using Fleetique.ViewModels;
 
-    public class AppBootstrapper : BootstrapperBase {
+    public class AppBootstrapper : BootstrapperBase
+    {
         SimpleContainer container;
 
-        public AppBootstrapper() {
+        public AppBootstrapper()
+        {
             Initialize();
         }
 
-        protected override void Configure() {
+        protected override void Configure()
+        {
             container = new SimpleContainer();
             container.Instance(container);
             container.Singleton<IWindowManager, WindowManager>();
             container.Singleton<IEventAggregator, EventAggregator>();
             container.Singleton<HomeViewModel, HomeViewModel>();
+
             GetType().Assembly.GetTypes()
                .Where(type => type.IsClass)
                .Where(type => type.Name.EndsWith("ViewModel"))
@@ -27,27 +32,31 @@ namespace WpfBoilerPlate {
 
         }
 
-        protected override object GetInstance(Type service, string key) {
+        protected override object GetInstance(Type service, string key)
+        {
             return container.GetInstance(service, key);
         }
 
-        protected override IEnumerable<object> GetAllInstances(Type service) {
+        protected override IEnumerable<object> GetAllInstances(Type service)
+        {
             return container.GetAllInstances(service);
         }
 
-        protected override void BuildUp(object instance) {
+        protected override void BuildUp(object instance)
+        {
             container.BuildUp(instance);
         }
 
-        protected override void OnStartup(object sender, System.Windows.StartupEventArgs e) {
+        protected override void OnStartup(object sender, System.Windows.StartupEventArgs e)
+        {
             base.OnStartup(sender, e);
             try
             {
                 DisplayRootViewFor<HomeViewModel>();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-            
+
             }
         }
     }

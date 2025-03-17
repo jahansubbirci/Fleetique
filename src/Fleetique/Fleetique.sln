@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fleetique", "Fleetique\Flee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "..\..\..\..\..\OneDrive - Maersk Group\Projects\LoggerService\LoggerService.csproj", "{5EBAF20D-DB5A-4CD2-B75B-0EF31EF526F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumBoilerPlate", "..\..\..\..\..\OneDrive - Maersk Group\Projects\SeleniumBoilerPlate\SeleniumBoilerPlate\SeleniumBoilerPlate.csproj", "{35FE2293-397A-4494-9348-8A25934F63D6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{5EBAF20D-DB5A-4CD2-B75B-0EF31EF526F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EBAF20D-DB5A-4CD2-B75B-0EF31EF526F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EBAF20D-DB5A-4CD2-B75B-0EF31EF526F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35FE2293-397A-4494-9348-8A25934F63D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35FE2293-397A-4494-9348-8A25934F63D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35FE2293-397A-4494-9348-8A25934F63D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35FE2293-397A-4494-9348-8A25934F63D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

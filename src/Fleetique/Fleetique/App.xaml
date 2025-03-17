@@ -1,7 +1,7 @@
-﻿<Application x:Class="WpfBoilerPlate.App"
+﻿<Application x:Class="Fleetique.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WpfBoilerPlate"
+             xmlns:local="clr-namespace:Fleetique"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              >
     <Application.Resources>

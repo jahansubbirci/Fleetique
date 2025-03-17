@@ -6,15 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfBoilerPlate.ViewModels
+namespace Fleetique.ViewModels
 {
-    public class HomeViewModel: Screen
+    public class HomeViewModel : Screen
     {
         public HomeViewModel()
         {
         }
-        
 
-        
+
+
     }
 }
